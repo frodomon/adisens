@@ -1,0 +1,50 @@
+/**ADMIN STYLES**/
+.group:after {
+	content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+.metabox{
+	width:100%;
+	box-sizing: border-box;
+}
+.field{
+	width:100%;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.fieldname{
+	width: 20%;
+	float:left;
+	display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+	box-sizing: border-box;
+}
+.fieldname label{
+	font-weight: bold;
+}
+.fieldvalue{
+	width:80%;
+	float:left;
+	display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+	box-sizing: border-box;
+}
+.fieldvalue input{
+	width:50%;
+}
+.fieldvalue .custom-img-container{
+	width: 20%;
+}
+.fieldvalue .custom-img-container img{
+	width: 100%;
+	display:block;
+}
+.fieldvalue .custom-img-controls{
+	width: 100%;
+}

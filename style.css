@@ -1,0 +1,16 @@
+/*
+Theme Name: Adisens
+Author: Alfredo Vásquez
+Author URI: http://www.alfredovasquezalcala.com
+Description: A general purpose theme.
+Version: 1.0
+Tags: OnePage
+*/
+@import url("css/reset.css");
+@import url("css/bootstrap.min.css");
+@import url("css/fonts.css");
+@import url("css/flexslider.css");
+@import url("css/master.css");
+@import url("css/responsive.css");
+@import url("css/ie.css");
+@import url("css/superfish.css");

@@ -1,0 +1,350 @@
+/*--------------------MEDIA QUERY-----------------------*/
+@media only screen and (min-width: 2560px){
+	#grid[data-columns]::before{
+		content: '4 .column.size-1of4';
+	}
+	.togglemenu{
+  display:none;
+	}
+	.responsive-menu{
+	  display:none;
+	}
+}
+@media only screen and (min-width: 1716px) and (max-width: 2559px){
+	#grid[data-columns]::before{
+		content: '3 .column.size-1of3';
+	}
+	.togglemenu{
+  display:none;
+	}
+	.responsive-menu{
+	  display:none;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1715px){
+	html{
+		font-size: 14px;
+	}
+	#grid[data-columns]::before{
+		content: '2 .column.size-1of2';
+	}
+	.togglemenu{
+  display:none;
+	}
+	.responsive-menu{
+	  display:none;
+	}
+	#species{
+		background: url("../images/especies background.jpg") no-repeat center center; 
+	}
+	.species-wrap{
+		width:100%;
+		margin:0;
+	}
+	.species-content{
+		padding:0 5%;
+	}
+	.represent-top,
+	.content-represent{
+		width:100%;
+	}
+	.represent-description{
+		width:90%;
+		margin:2rem 5%;
+	}
+	.profile{
+		display:none;
+	}
+	.header-logo{
+		width:85%;
+	}
+	.header-menu{
+		width:15%;
+	}
+	#logo-header{
+		display:block !important;
+	}
+	#logo-header_inv{
+		display:none !important;
+	}
+	.togglebar{
+		border:none;
+		background-color: #FFFFFF;
+	}
+	.togglebar i{
+		color:#005EA9;
+	}
+	.open-menu{
+		height:200px !important;
+	}
+	.header-searchbar{
+		width:100%;
+		margin: 0;
+	}
+	#search_text{
+		text-align: left;
+		padding-left: 1.5rem;
+		width:75%;
+	}
+	.sf-menu{
+		display: none;
+	}
+	.togglemenu{
+		display:block;
+		width: 90%;
+		margin: 0 5%;
+		text-align: left;
+	}
+	.widget-title{
+		font-size: 1.2rem;
+	}
+	#products,
+	#contact_us,
+	#about_us{
+		padding: 2rem 5%;
+	}
+}
+@media only screen and (max-width: 767px){
+	html{
+		font-size: 14px;
+	}
+	.hide-responsive{
+		display:none;
+	}
+	.show-responsive{
+		display:block;
+	}
+	#grid[data-columns]::before{
+		content: '1 .column.size-1of1';
+	}
+	.right-col,.left-col{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.pagination{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.footer-bottom-right,
+	.footer-bottom-left{
+		text-align: center;
+	}
+	#blog{
+		margin-bottom: 30px;
+	}
+	/*HEADER*/
+	header{
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+  	background-color: #FFFFFF;
+	}
+	.header-logo{
+		width:85%;
+	}
+	.header-menu{
+		width:15%;
+	}
+	#logo-header{
+		display:block !important;
+	}
+	#logo-header_inv{
+		display:none !important;
+	}
+	.togglebar{
+		border:none;
+		background-color: #FFFFFF;
+	}
+	.togglebar i{
+		color:#005EA9;
+	}
+	.open-menu{
+		height:200px !important;
+	}
+	.header-searchbar{
+		width:100%;
+		margin: 0;
+	}
+	#search_text{
+		text-align: left;
+		padding-left: 1.5rem;
+		width:88%;
+	}
+	.sf-menu{
+		display: none;
+	}
+	.togglemenu{
+		display:block;
+		width: 90%;
+		margin: 0 5%;
+		text-align: left;
+	}
+	.related_post{
+		width: 100%;
+		margin-right: 0;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.slide img{
+		width:auto;
+	}
+	.slide-title,
+	.slide-description{
+		font-size: 3rem;
+	}
+	#species-circle {
+    width: 90%;
+    margin: 0 5%;
+	}
+	#news-posts{
+		width:90%;
+		margin:0 5%;
+	}
+	.news-post{
+		width: 100%;
+		margin: 2rem 0;
+	}
+	.news-post:first-child{
+		margin: 2rem 0;
+	}
+	.news-post:last-child{
+		margin: 2rem 0;
+	}
+	/* layout */
+	.section-title{
+		font-size:2rem;
+		padding-left: 5%;
+	}
+	.separator-title{
+		margin-left: 5%;
+	}
+	/* Home Represen */
+	.content-represent{
+		width:100%;
+	}
+	.profile{
+		display:none;
+	}
+	.represent-description{
+		width:100%;
+		margin:0;
+		padding: 2rem 5% 2rem 5%;
+	}
+	.represent-bottom{
+		padding: 1rem 1.5rem 1rem 1.5rem;
+	}
+	.supplier{
+		width:100px;
+	}
+	/* Home Especies */
+	#species{
+		background: url("../images/especies background.jpg") no-repeat center center; 
+	}
+	.species-wrap{
+		width:100%;
+		margin:0;
+	}
+	.title-right{
+		padding-right: 5%;
+	}
+	.species-text{
+		width:100%;
+		padding-right: 5%;
+		margin:0;
+	}
+	.separator-right{
+		margin: 1.5rem 5%1.5rem 0;	
+	}
+	/* Home Contact */
+	.contact-center,
+	.contact-right{
+		padding-top:1rem;
+	}
+	.col-left,
+	.col-right,
+	.footer-bottom-left,
+	.footer-bottom-right{
+		width:100%;
+	}
+	#contact{
+		width:100%;
+		padding: 3rem 0;
+	}
+	.contact-group{
+		padding: 2rem 0 0 1.5rem;
+	}
+	#contact .col-right{
+		padding: 2rem 1.5rem;
+	}
+	.gmaps{
+		width: 100%;
+		margin:0;
+		height:auto;
+		margin-bottom: 1.5rem;
+	}
+	.gm{
+		height:300px;
+	}
+	.contact-form{
+		width: 100%;
+		margin:0;
+		height:auto;
+	}
+	/*Nosotros*/
+	#about_us{
+		padding: 2rem 5% 2rem 5%;
+	}
+	.about-top{
+		height: auto;
+	}
+	.mission,
+	.vision{
+		width:100%;
+		margin:0;
+		height:auto;
+	}
+	.mission{
+		margin-bottom: 1.5rem;
+	}
+	.cf-inline{
+		width:100%;
+		margin: 0.5rem 0 0 0;
+	}
+	.cf-inline:first-child{
+		margin:0;
+	}
+	.about-contact{
+		width:100%;
+		height:auto;
+	}
+	.about-image{
+		display:none;
+	}
+	.about_us_p{
+		text-align: center;
+	}
+	/*Productos*/
+	#products{
+		padding:2rem 5%;
+	}
+	.especies-category{
+		width:100%;
+	}
+	.product-resume-description{
+		width:100%;
+		padding-top: 2rem;
+		padding-left:0;
+	}
+	.product-thumbnail{
+		width:100%;
+		padding:0;
+	}
+	.product-title{
+		text-align:center;
+	}
+	/* Contacto*/
+	#contact_us{
+		padding:2rem 5%;
+	}
+
+}
