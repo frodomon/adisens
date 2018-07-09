@@ -1,29 +1,38 @@
 <?php
+  
+  add_action("admin_menu", "add_theme_menu_item");
+
   function add_theme_menu_item()
   {
     add_menu_page("Dohko Theme Options", "Dohko Theme Options", "manage_options", "dohko-theme-options", "dohko_settings_page", null, 99);
-    add_submenu_page("dohko-theme-options", "Dohko Settings", "Dohko Settings", "manage_options", "dohko-theme-options");
     add_submenu_page("dohko-theme-options", "Header Theme Options", "Header Options", "manage_options", "dohko-header-options", "dohko_header_options_page");
+    add_submenu_page("dohko-theme-options", "Footer Theme Options", "Footer Options", "manage_options", "dohko_footer_options","dohko_footer_options_page");
     add_submenu_page("dohko-theme-options", "Social Profile Options", "Social Profile", "manage_options", "dohko-social-profile", "dohko_social_profile_page");
     add_submenu_page("dohko-theme-options", "Contact Options", "Contact Options", "manage_options", "dohko-contact-options", "dohko_contact_options_page");
     add_submenu_page("dohko-theme-options", "About Us Options", "About Us Options", "manage_options", "dohko-about-us-options", "dohko_about_us_options_page");
+    add_submenu_page("dohko-theme-options", "Home Page Options", "Home Page Options", "manage_options", "dohko-home-page-options", "dohko_home_page_options_page");
 
-  
     add_action( 'admin_init', 'dohko_register_settings' );
   }
 
-  add_action("admin_menu", "add_theme_menu_item");
-
   function dohko_register_settings() {
     //register our settings
+   
+    //Social Options
     register_setting( 'dohko-settings-social', 'dohko_facebook' );
     register_setting( 'dohko-settings-social', 'dohko_youtube' );
     register_setting( 'dohko-settings-social', 'dohko_instagram' );
     register_setting( 'dohko-settings-social', 'dohko_googleplus' );
     register_setting( 'dohko-settings-social', 'dohko_twitter' );
     register_setting( 'dohko-settings-social', 'dohko_rss' );
+   
+    //Header Options
     register_setting( 'dohko-settings-header', 'dohko_logo' );
+   
+    //Footer Options
     register_setting( 'dohko-settings-footer', 'dohko_analytics' );
+   
+    //Contact Options
     register_setting( 'dohko-settings-contact', 'dohko_address_line_1' );
     register_setting( 'dohko-settings-contact', 'dohko_address_line_2' );
     register_setting( 'dohko-settings-contact', 'dohko_address_line_3' );
@@ -37,6 +46,8 @@
     register_setting( 'dohko-settings-contact', 'dohko_working_days_2' );
     register_setting( 'dohko-settings-contact', 'dohko_working_hours_3' );
     register_setting( 'dohko-settings-contact', 'dohko_working_days_3' );
+   
+    //ABout Options
     register_setting( 'dohko-settings-about-us', 'dohko_about_p1' );
     register_setting( 'dohko-settings-about-us', 'dohko_about_p2' );
     register_setting( 'dohko-settings-about-us', 'dohko_about_p3' );
@@ -44,7 +55,8 @@
     register_setting( 'dohko-settings-about-us', 'dohko_mission' );
     register_setting( 'dohko-settings-about-us', 'dohko_vision' );
     
-    
+    //Home Page Options
+    register_setting( 'dohko-settings-home-page', 'dohko_represent' );
   }
 
   function dohko_header_options_page(){
@@ -111,8 +123,27 @@
     </div>
   <?php }
 
-  function dohko_settings_page() {
-  } 
+  function dohko_home_page_options_page() {
+  ?>
+    <div class="wrap">
+      <h2>Dohko Home Page Options</h2>
+      <form method="post" action="options.php">
+        <?php settings_fields( 'dohko-settings-home-page' ); ?>
+        <table class="form-table">
+          <tr>
+            <th scope="row">Texto A quienes representamos:</th>
+            <td>
+              <textarea name="dohko_represent"><?php print get_option('dohko_represent'); ?></textarea>
+            </td>
+          </tr> 
+        </table>
+         <p class="submit">
+          <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+        </p>
+      </form>
+    <div>
+  <?php }
+
   function dohko_footer_options_page(){
   ?>
     <div class="wrap">
