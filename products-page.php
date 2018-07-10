@@ -69,9 +69,6 @@ get_header();  ?>
       		<div class="p-thumb">
 						<img src="<?php echo $post_thumbnail_url; ?>" /> 
 					</div> 
-					<div style="width:100%; text-align:center;">
-						<a href="<?php echo $custom_doc; ?>" target='_blank'>Ver Ficha Técnica</a>     				
-					</div>
 				</div>      		
     		<div class="product-resume-description">
   				<p class='product-title' style='color:black;'><?php the_title(); ?></p>
