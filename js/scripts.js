@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 		jQuery(this).find('a').trigger('click');
 	})
 
-  if ( window.location.pathname != '/wordpress/' ){
+  if ( window.location.pathname != '/' ){
   	jQuery('header').addClass('bg-blanco');
     jQuery('#wrap').css('padding-top','80px');
     jQuery('.header-menu .sf-menu .menu-item a').addClass('header-color');
