@@ -15,14 +15,14 @@
       ?>
     
       <li class="slide" style="background:url(<?php echo $post_thumbnail_url; ?>) no-repeat center center; background-size:cover;">
-        <a href='<?php echo $btn_link ?>'>
+        <a href='<?php echo $btn_link ?>'>  
           <div class="slide-content">
             <p class='slide-title'><?php the_title(); ?></p>
             <p class='slide-description'><?php echo get_the_content($post); ?></p>
           </div>
         </a>
       </li>
-    
+      
     <?php endforeach;  
     wp_reset_postdata(); ?>
   </ul>
