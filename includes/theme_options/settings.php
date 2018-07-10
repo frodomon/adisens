@@ -133,7 +133,7 @@
           <tr>
             <th scope="row">Texto A quienes representamos:</th>
             <td>
-              <textarea name="dohko_represent"><?php print get_option('dohko_represent'); ?></textarea>
+              <textarea name="dohko_represent" style="width:100%; height:100px;"><?php print get_option('dohko_represent'); ?></textarea>
             </td>
           </tr> 
         </table>
@@ -154,7 +154,7 @@
           <tr>
             <th scope="row">Google Analytics Code:</th>
             <td>
-              <textarea name="dohko_analytics"><?php print get_option('dohko_analytics'); ?></textarea>
+              <textarea name="dohko_analytics" style="width:100%; height:100px;"><?php print get_option('dohko_analytics'); ?></textarea>
             </td>
           </tr> 
         </table>
